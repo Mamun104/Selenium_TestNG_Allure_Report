@@ -1,4 +1,4 @@
-# Slenium_TestNG_Allure_Report
+# Selenium_TestNG_Allure_Report
 
 
 # Prerequisites
