@@ -1,0 +1,171 @@
+[ {
+  "uid" : "11922ad8d38537de",
+  "name" : "selectDropDowns",
+  "time" : {
+    "start" : 1644349010583,
+    "stop" : 1644349012746,
+    "duration" : 2163
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2dac0483891469a7",
+  "name" : "getTitle",
+  "time" : {
+    "start" : 1644348867028,
+    "stop" : 1644348868500,
+    "duration" : 1472
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cceb3a4fbcb23214",
+  "name" : "handleNewWindow",
+  "time" : {
+    "start" : 1644348933504,
+    "stop" : 1644348938677,
+    "duration" : 5173
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "85b15afc76eae0ea",
+  "name" : "scrapData",
+  "time" : {
+    "start" : 1644349002159,
+    "stop" : 1644349010568,
+    "duration" : 8409
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8a9746b2fda57a2c",
+  "name" : "keyboardEvents",
+  "time" : {
+    "start" : 1644348938697,
+    "stop" : 1644348947826,
+    "duration" : 9129
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bc6433eaf16ba439",
+  "name" : "handleNewTab",
+  "time" : {
+    "start" : 1644348911847,
+    "stop" : 1644348933326,
+    "duration" : 21479
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9128c3f9ed68c2cc",
+  "name" : "handleIframe",
+  "time" : {
+    "start" : 1644348868503,
+    "stop" : 1644348911847,
+    "duration" : 43344
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3cbe7882bf308c8e",
+  "name" : "modalDialog",
+  "time" : {
+    "start" : 1644348948406,
+    "stop" : 1644348972843,
+    "duration" : 24437
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "418e2a2ea3c2346c",
+  "name" : "fillUpTextBox",
+  "time" : {
+    "start" : 1644348863092,
+    "stop" : 1644348866986,
+    "duration" : 3894
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "225fa629e50b3a6d",
+  "name" : "fillUpForm",
+  "time" : {
+    "start" : 1644348858913,
+    "stop" : 1644348863069,
+    "duration" : 4156
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d77cdc8410ee9f94",
+  "name" : "alerts",
+  "time" : {
+    "start" : 1644348790165,
+    "stop" : 1644348814215,
+    "duration" : 24050
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fbaf209ad0064a2d",
+  "name" : "editTable",
+  "time" : {
+    "start" : 1644348851603,
+    "stop" : 1644348858910,
+    "duration" : 7307
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ca68548b16d6376c",
+  "name" : "clickButton",
+  "time" : {
+    "start" : 1644348821512,
+    "stop" : 1644348827690,
+    "duration" : 6178
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9e67fff1d53b169",
+  "name" : "mouseHover",
+  "time" : {
+    "start" : 1644348972849,
+    "stop" : 1644349002151,
+    "duration" : 29302
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "21bcceee041338fb",
+  "name" : "datePicker",
+  "time" : {
+    "start" : 1644348839610,
+    "stop" : 1644348851599,
+    "duration" : 11989
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b6f0de55819617f7",
+  "name" : "clickMultipleButton",
+  "time" : {
+    "start" : 1644348827737,
+    "stop" : 1644348839607,
+    "duration" : 11870
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2d1b4c5adcf353e7",
+  "name" : "checkIfElementExists",
+  "time" : {
+    "start" : 1644348814759,
+    "stop" : 1644348821405,
+    "duration" : 6646
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

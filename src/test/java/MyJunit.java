@@ -9,6 +9,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 import java.io.File;
 import java.io.IOException;
@@ -21,7 +23,7 @@ public class MyJunit {
     WebDriver driver;
     WebDriverWait wait;
 
-    @Before
+    @BeforeClass
     public void setup() {
         System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
@@ -32,21 +34,21 @@ public class MyJunit {
     }
 
 
-    @Test
+    @org.testng.annotations.Test
     public void getTitle() {
         driver.get("https://demoqa.com");
         String title = driver.getTitle();
         System.out.println(title);
     }
 
-    @Test
+    @org.testng.annotations.Test
     public void checkIfElementExists() {
         driver.get("https://demoqa.com");
         boolean status = driver.findElement(By.className("banner-image")).isDisplayed();
         Assert.assertTrue(status);
     }
 
-    @Test
+    @org.testng.annotations.Test
     public void fillUpTextBox() throws InterruptedException {
         driver.get("https://demoqa.com/text-box");
         wait = new WebDriverWait(driver, Duration.ofSeconds(120));
@@ -59,7 +61,7 @@ public class MyJunit {
         driver.findElement(By.xpath("//button[@id='submit']")).click();
     }
 
-    @Test
+    @org.testng.annotations.Test
     public void fillUpForm()
     {
         driver.get("https://demoqa.com/text-box");
@@ -68,7 +70,7 @@ public class MyJunit {
         driver.findElement(By.id("submit")).click();
     }
 
-    @Test
+    @org.testng.annotations.Test
     public void clickButton() {
         driver.get("https://demoqa.com/buttons");
         WebElement doubleClick = driver.findElement(By.id("doubleClickBtn"));
@@ -84,7 +86,7 @@ public class MyJunit {
         Assert.assertTrue(text2.contains("a right click"));
     }
 
-    @Test
+    @org.testng.annotations.Test
     public void clickMultipleButton() throws InterruptedException {
         driver.get("https://demoqa.com/buttons");
         Thread.sleep(5000);
@@ -96,7 +98,7 @@ public class MyJunit {
         Thread.sleep(2500);
     }
 
-    @Test
+    @org.testng.annotations.Test
     public void alerts() throws InterruptedException {
         driver.get("https://demoqa.com/alerts");
         driver.findElement(By.id("alertButton")).click();
@@ -114,7 +116,7 @@ public class MyJunit {
         Assert.assertTrue(text.contains("You entered Jon Doe"));
     }
 
-    @Test
+    @org.testng.annotations.Test
     public void datePicker() throws InterruptedException {
         driver.get("https://demoqa.com/date-picker");
         driver.findElement(By.id("dateAndTimePickerInput")).clear();
@@ -123,7 +125,7 @@ public class MyJunit {
         driver.findElement(By.id("dateAndTimePickerInput")).sendKeys(Keys.ENTER);
     }
 
-    @Test
+    @org.testng.annotations.Test
     public void selectDropDowns() {
         driver.get("https://demoqa.com/select-menu");
         Select color = new Select(driver.findElement(By.id("oldSelectMenu")));
@@ -135,7 +137,7 @@ public class MyJunit {
         }
     }
 
-    @Test
+    @org.testng.annotations.Test
     public void handleNewTab() throws InterruptedException {
         driver.get("https://demoqa.com/links");
         driver.findElement(By.id("simpleLink")).click();
@@ -154,7 +156,7 @@ public class MyJunit {
         driver.switchTo().window(w.get(0));
     }
 
-    @Test
+    @org.testng.annotations.Test
     public void handleNewWindow() {
         driver.get("https://demoqa.com/browser-windows");
         wait = new WebDriverWait(driver, Duration.ofSeconds(60));
@@ -176,7 +178,7 @@ public class MyJunit {
         driver.switchTo().window(mainWindowHandle);
     }
 
-    @Test
+    @org.testng.annotations.Test
     public void modalDialog() throws InterruptedException {
         driver.get("https://demoqa.com/modal-dialogs");
         wait = new WebDriverWait(driver, Duration.ofSeconds(60));
@@ -185,7 +187,7 @@ public class MyJunit {
         Thread.sleep(1500);
         driver.findElement(By.id("closeSmallModal")).click();
     }
-    @Test
+    @org.testng.annotations.Test
     public void editTable() throws InterruptedException {
         driver.get("https://demoqa.com/webtables");
         wait = new WebDriverWait(driver, Duration.ofSeconds(60));
@@ -203,7 +205,7 @@ public class MyJunit {
         Thread.sleep(1500);
     }
 
-    @Test
+    @org.testng.annotations.Test
     public void scrapData() {
         driver.get("https://demoqa.com/webtables");
         wait = new WebDriverWait(driver, Duration.ofSeconds(60));
@@ -220,7 +222,7 @@ public class MyJunit {
         }
     }
 
-    @Test
+    @org.testng.annotations.Test
     public void handleIframe() {
         driver.get("https://demoqa.com/frames");
         driver.switchTo().frame("frame1");
@@ -230,7 +232,7 @@ public class MyJunit {
         driver.switchTo().defaultContent();
     }
 
-    @Test
+    @org.testng.annotations.Test
     public void mouseHover() throws InterruptedException {
         driver.get("https://green.edu.bd");
         WebElement mainMenu = driver.findElement(By.xpath("//a[@class='dropdown-toggle'][contains(text(),'About Us')]"));
@@ -245,7 +247,7 @@ public class MyJunit {
         Thread.sleep(1500);
     }
 
-    @Test
+    @org.testng.annotations.Test
     public void keyboardEvents() throws InterruptedException {
         driver.get("https://www.google.com/");
         WebElement searchElement = driver.findElement(By.name("q"));
@@ -260,7 +262,7 @@ public class MyJunit {
         Thread.sleep(2000);
     }
 
-    @After
+    @AfterClass
     public void closeBrowser() {
         driver.close();
     }

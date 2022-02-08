@@ -1,0 +1,98 @@
+{
+  "uid" : "bc6433eaf16ba439",
+  "name" : "handleNewTab",
+  "fullName" : "MyJunit.handleNewTab",
+  "historyId" : "1ab8b4f18c8830e44fbc5cd0b77f7f4e",
+  "time" : {
+    "start" : 1644348911847,
+    "stop" : 1644348933326,
+    "duration" : 21479
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1644348735088,
+      "stop" : 1644348790010,
+      "duration" : 54922
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "closeBrowser",
+    "time" : {
+      "start" : 1644349012874,
+      "stop" : 1644349016761,
+      "duration" : 3887
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "MyJunit"
+  }, {
+    "name" : "testClass",
+    "value" : "MyJunit"
+  }, {
+    "name" : "testMethod",
+    "value" : "handleNewTab"
+  }, {
+    "name" : "parentSuite",
+    "value" : "E-commerce portal automation"
+  }, {
+    "name" : "suite",
+    "value" : "E-commerce portal signup"
+  }, {
+    "name" : "subSuite",
+    "value" : "MyJunit"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-0K4P3UP"
+  }, {
+    "name" : "thread",
+    "value" : "3400@DESKTOP-0K4P3UP.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bc6433eaf16ba439.json",
+  "parameterValues" : [ ]
+}
